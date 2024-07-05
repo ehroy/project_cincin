@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->enum('type',['cincin','kalung',"gelang","anting","bros"]);
             $table->string('price');
+            $table->string('desc');
+            $table->string('slug');
             $table->string('image')->nullable();
             $table->timestamps();
         });
